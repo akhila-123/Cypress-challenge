@@ -4,7 +4,9 @@
   "description": "Cypress challenge for practice",
   "main": "index.js",
   "scripts": {
-    "test": "npx cypress open"
+    "test": "npx cypress open",
+    "testOnChrome": "npx cypress run --browser chrome",
+    "testOnFirefox": "npx cypress run --browser firefox"
   },
   "repository": {
     "type": "git",
@@ -19,6 +21,7 @@
   "devDependencies": {
     "axe-core": "^4.10.3",
     "cypress": "^13.17.0",
-    "cypress-axe": "^1.6.0"
+    "cypress-axe": "^1.6.0",
+    "cypress-mochawesome-reporter": "^3.8.2"
   }
 }

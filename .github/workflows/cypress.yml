@@ -23,7 +23,7 @@ jobs:
           npx marge cypress/reports/merged-report.json --reportDir cypress/reports --reportFilename index.html
 
       - name: Upload Cypress Report
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: cypress-report
           path: cypress/reports/index.html

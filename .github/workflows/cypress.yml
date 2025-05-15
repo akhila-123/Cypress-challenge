@@ -20,9 +20,9 @@ jobs:
         run: |
           npx mochawesome-merge cypress/reports/*.json -o cypress/reports/merged-report.json
           npx marge cypress/reports/merged-report.json --reportDir cypress/reports --reportFilename index.html
-          
-      # - name: Upload Cypress report
-      #   uses: actions/upload-artifact@v3
-      #   with:
-      #     name: cypress-report
-      #     path: cypress/reports/index.html
+
+      - name: Upload Cypress report
+        uses: actions/upload-artifact@v3
+        with:
+          name: cypress-report
+          path: cypress/reports/index.html

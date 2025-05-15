@@ -7,8 +7,9 @@
     "test": "npx cypress open",
     "testOnChrome": "npx cypress run --browser chrome",
     "testOnFirefox": "npx cypress run --browser firefox",
-    "mergeReport": "npx mochawesome-merge cypress/reports/*.json > cypress/reports/merged-report.json",
-    "generateReport": "npx marge cypress/reports/merged-report.json --reportDir cypress/reports --reportFilename index.html"
+    "mergeReport": "npx mochawesome-merge cypress/reports/*.json -o cypress/reports/merged-report.json",
+    "generateReport": "npx marge cypress/reports/merged-report.json --reportDir cypress/reports --reportFilename index.html",
+    "cleanReport": "rd /s /q cypress\\screenshots || rd /s /q cypress\\reports || rd /s /q cypress\\downloads"
   },
   "repository": {
     "type": "git",

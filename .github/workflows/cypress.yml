@@ -23,6 +23,7 @@ jobs:
           npx marge cypress/reports/merged-report.json --reportDir cypress/reports --reportFilename index.html
 
       - name: Upload Cypress Report
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: cypress-report

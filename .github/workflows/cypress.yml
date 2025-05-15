@@ -1,4 +1,4 @@
-name: Run Cypress Tests
+name: Run Cypress Tests with Mochawesome Report
 
 on: [push, pull_request]
 
@@ -21,8 +21,8 @@ jobs:
           npx mochawesome-merge cypress/reports/*.json > cypress/reports/merged.json
           npx marge cypress/reports/merged.json --reportDir cypress/reports --reportFilename index.html
 
-      - name: Upload Cypress report
-        uses: actions/upload-artifact@v3
-        with:
-          name: cypress-report
-          path: cypress/reports/index.html
+      # - name: Upload Cypress report
+      #   uses: actions/upload-artifact@v3
+      #   with:
+      #     name: cypress-report
+      #     path: cypress/reports/index.html

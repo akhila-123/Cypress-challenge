@@ -1,6 +1,6 @@
 # Cypress Challenge Assignment: E-Commerce Flow Automation
 Objective:
-Automate an end-to-end user journey on a mock e-commerce site. You can use a public site like https://www.saucedemo.com or install a local mock app (e.g., react-shopping-cart).
+Automate an end-to-end user journey on a mock e-commerce site. You can use a public site like https://www.demoblaze.com/ or install a local mock app (e.g., react-shopping-cart).
 
 ✅ **Tasks to Complete**
 1. **Login Test**
